@@ -4,8 +4,8 @@ using namespace std;
 
 class Animal {
 public:
-    virtual void speak() const = 0; // Afegit 'const'
-    virtual void eat() const = 0;   // Afegit 'const'
+    virtual void speak() const = 0; 
+    virtual void eat() const = 0;   
 
     virtual ~Animal() {
         cout << "Animal Destructor Called." << endl;
@@ -14,11 +14,11 @@ public:
 
 class Dog : public Animal {
 public:
-    void speak() const override {  // 'const' aquí coincideix amb la classe base
+    void speak() const override {  
         cout << "Woof, woof!" << endl;
     }
 
-    void eat() const override {    // 'const' aquí coincideix amb la classe base
+    void eat() const override {    
         cout << "I'm eating my meat, woof!" << endl;
     }
 
@@ -29,11 +29,11 @@ public:
 
 class Cat : public Animal {
 public:
-    void speak() const override {  // 'const' aquí coincideix amb la classe base
+    void speak() const override {  
         cout << "Meow, meow!" << endl;
     }
 
-    void eat() const override {    // 'const' aquí coincideix amb la classe base
+    void eat() const override {   
         cout << "I'm eating my fish, meow!" << endl;
     }
 
